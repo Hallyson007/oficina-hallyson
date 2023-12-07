@@ -23,7 +23,7 @@
         </tr>
         <tr>
             <td>Ólio</td>
-            <td><input type="number" name="olio" id="olio"></td>
+            <td><input type="number" name="oleo" id="oleo"></td>
 
         </tr>
         <tr>
