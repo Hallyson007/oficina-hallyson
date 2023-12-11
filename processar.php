@@ -30,18 +30,25 @@
 
     echo '<p> Pedido Processado ás :'.date('H:i - d/m/y').'</p>';
     
-    echo $pneu .' pneus <br>';
-    
-    echo $oleo .' galões <br>';
-    
-    echo $vela .' velas <br>';
+   
     
     $qtdtotal = $pneu + $oleo + $vela;
+    if ($qtdtotal ==0) {
     
-    echo 'A quantidade total é :'.$qtdtotal.'<br>';
+        echo 'você nao pediu nada. <br>' ;
+    } else { echo $pneu .' pneus <br>';
+    
+        echo $oleo .' galões <br>';
+        
+        echo $vela .' velas <br>';
+        }
+        
+        echo 'A quantidade total é :'.$qtdtotal.'<br>';
     
     echo 'O valor total é R$: '.number_format($valortotal,2,",",".");
- 
+    $taxa = 0.22 ; // lucru presumido
+    $valortotal = $valortotal + (1+ $taxa);
+     echo 'O valor total é R$: '.number_format($valortotal,2,",",".");   
  ?>
  
     <p><a  href="index.php">Voltar</a></p>

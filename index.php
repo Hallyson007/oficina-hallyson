@@ -18,17 +18,17 @@
         </tr>
         <tr>
             <td>Pneu</td>
-            <td><input type="number" name="pneu" id="pneu"></td>
+            <td><input type="number" name="pneu" id="pneu" min="0" value="0"></td>
 
         </tr>
         <tr>
             <td>Ólio</td>
-            <td><input type="number" name="oleo" id="oleo"></td>
+            <td><input type="number" name="oleo" id="oleo" min="0" value="0"></td>
 
         </tr>
         <tr>
             <td>Vela</td>
-            <td><input type="number" name="vela" id="vela"></td>
+            <td><input type="number" name="vela" id="vela" min="0" value="0"></td>
 
         </tr>
           </form>
