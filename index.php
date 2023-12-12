@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="principal.css">
 </head>
 <body>
     <h1>oficina o hallyson</h1>
@@ -11,7 +12,7 @@
 
 
      
-    <table border="10">
+    <table>
         <tr>
             <th>item</th>
             <th>quantidade</th>
@@ -33,7 +34,19 @@
         </tr>
           </form>
     
-    
+          </tr>
+          <tr>
+              <td>como você nos achou ? </td>
+               <td><select name="achar" id="achar">
+                <option value="a">sou cliete</option>
+                <option value="b">anúcio de tv</option>
+                <option value="c">telefone</option>
+                <option value="d">boca boca</option>
+              </select></td>
+                
+              
+  
+          </tr>
      </table>
     <input type= "submit" value="Enviar" >
 

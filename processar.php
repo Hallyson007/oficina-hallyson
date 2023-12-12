@@ -12,6 +12,7 @@
  $pneu = $_POST['pneu'];
  $oleo = $_POST['oleo'];
  $vela = $_POST['vela'];
+ $achar = $_POST['achar'];
  $valortotal = 0.00;
  $qtdtotal = 0;
  define ('PRECOPNEU', 100);
@@ -48,6 +49,23 @@ if ($pneu < 10) {
  echo 'O valor total com imposto é de R$: '.number_format($valortotal,2,",",".");
  $valortotal = $valortotal * (1 - $desconto);
  echo 'O valor total com desconto é de R$: '.number_format($valortotal,2,",",".");
+switch ($achar) {
+                case 'a':
+                    echo '<p> Cliente regular< /p>';
+            break ;
+                case 'b':
+                    echo '<p> anúncio de tv< /p>';
+            break ;
+                case 'c':
+                    echo '<p> telefone< /p>';
+            break ;
+                case 'd':
+                    echo '<p> boca boca < /p>';
+            break ;
+ default :
+                    echo '<p> Não encontrado < /p>' ; 
+            break;    
+        }
 ?>
 </body>
 </html>
