@@ -11,7 +11,7 @@
 
 
      
-    <table>
+    <table border="10">
         <tr>
             <th>item</th>
             <th>quantidade</th>
@@ -35,7 +35,7 @@
     
     
      </table>
-    <input type="submit" value="Enviar">
+    <input type= "submit" value="Enviar" >
 
 </body>
 </html>
